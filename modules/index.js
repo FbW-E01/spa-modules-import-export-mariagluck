@@ -1,10 +1,8 @@
 // Your code goes here!
-import { modulo } from "./percentage.js";
-import { percentage } from "./percentage.js";
-import { percentageOf } from "./percentage.js";
-import { difference } from "./percentage.js";
-import { fixRoundingErrors } from "./aspect-ratio.js";
-import { calculateAspectRatio } from "./aspect-ratio.js";
+import * as Helpers from "./percentage.js";
+
+import { fixRoundingErrors, calculateAspectRatio } from "./aspect-ratio.js";
+
 
 
 
@@ -14,10 +12,10 @@ const modulo2 = document.querySelector("#modulo_2");
 const moduloResult = document.querySelector("#modulo_result");
 
 modulo1.addEventListener("change", () => {
-    moduloResult.value = modulo(modulo1.value, modulo2.value);
+    moduloResult.value = Helpers.modulo(modulo1.value, modulo2.value);
 });
 modulo2.addEventListener("change", () => {
-    moduloResult.value = modulo(modulo1.value, modulo2.value);
+    moduloResult.value = Helpers.modulo(modulo1.value, modulo2.value);
 });
 
 
@@ -29,10 +27,10 @@ const percentage2= document.querySelector("#percentage_2");
 const percentageResult = document.querySelector("#percentage_result");
 
 percentage1.addEventListener("change", () => {
-    percentageResult.value = fixRoundingErrors(percentage(percentage1.value, percentage2.value));
+    percentageResult.value = Helpers.percentage(percentage1.value, percentage2.value);
 });
 percentage2.addEventListener("change", () => {
-    percentageResult.value = fixRoundingErrors(percentage(percentage1.value, percentage2.value));
+    percentageResult.value = Helpers.percentage(percentage1.value, percentage2.value);
 });
 
 
@@ -42,10 +40,10 @@ const percentageOf2= document.querySelector("#percentageOf_2");
 const percentageOfResult = document.querySelector("#percentageOf_result");
 
 percentageOf1.addEventListener("change", () => {
-    percentageOfResult.value = percentageOf(percentageOf1.value, percentageOf2.value);
+    percentageOfResult.value = Helpers.percentageOf(percentageOf1.value, percentageOf2.value);
 });
 percentageOf2.addEventListener("change", () => {
-    percentageOfResult.value = percentageOf(percentageOf1.value, percentageOf2.value);
+    percentageOfResult.value = Helpers.percentageOf(percentageOf1.value, percentageOf2.value);
 });
 
 
@@ -56,10 +54,10 @@ const difference2 = document.querySelector("#difference_2");
 const differenceResult = document.querySelector("#difference_result");
 
 difference1.addEventListener("change", () => {
-    differenceResult.value = difference(difference1.value, difference2.value);
+    differenceResult.value = Helpers.difference(difference1.value, difference2.value);
 });
 difference2.addEventListener("change", () => {
-    differenceResult.value = difference(difference1.value, difference2.value);
+    differenceResult.value = Helpers.difference(difference1.value, difference2.value);
 });
 
 
