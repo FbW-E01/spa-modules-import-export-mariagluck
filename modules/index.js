@@ -4,8 +4,6 @@ import * as Helpers from "./percentage.js";
 import { fixRoundingErrors, calculateAspectRatio } from "./aspect-ratio.js";
 
 
-
-
 // M O D U L O
 const modulo1 = document.querySelector("#modulo_1");
 const modulo2 = document.querySelector("#modulo_2");
