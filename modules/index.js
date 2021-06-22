@@ -20,8 +20,6 @@ modulo2.addEventListener("change", () => {
 
 
 // P E R C E N T A G E
-
-// percentage
 const percentage1 = document.querySelector("#percentage_1");
 const percentage2= document.querySelector("#percentage_2");
 const percentageResult = document.querySelector("#percentage_result");
@@ -34,7 +32,7 @@ percentage2.addEventListener("change", () => {
 });
 
 
-// P E R C E N T A G E -- F O R M 
+// P E R C E N T A G E --  O F
 const percentageOf1 = document.querySelector("#percentageOf_1");
 const percentageOf2= document.querySelector("#percentageOf_2");
 const percentageOfResult = document.querySelector("#percentageOf_result");
@@ -61,7 +59,7 @@ difference2.addEventListener("change", () => {
 });
 
 
-// A S P E C T -- R A T I O
+// A S P E C T 
 const ratio1 = document.querySelector("#ratio_1");
 const ratio2 = document.querySelector("#ratio_2");
 const ratioWidthResult = document.querySelector("#ratio_result-width");
