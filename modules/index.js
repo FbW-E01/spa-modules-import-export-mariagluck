@@ -57,7 +57,7 @@ difference2.addEventListener("change", () => {
 });
 
 
-// A S P E C T 
+// A S P E C T -- R A T I O
 const ratio1 = document.querySelector("#ratio_1");
 const ratio2 = document.querySelector("#ratio_2");
 const ratioWidthResult = document.querySelector("#ratio_result-width");
@@ -71,3 +71,31 @@ ratioHeightResult.addEventListener("change", () => {
 });
 
 
+
+///////////////// 
+//Alternative aspect ratio:
+
+// const form = document.querySelector("#aspect-form");
+// form.addEventListener("change", (e) => {
+// const ratio1 = document.querySelector("#ratio_1");
+// const ratio2 = document.querySelector("#ratio_2");
+// const ratioWidthResult = document.querySelector("#ratio_result-width");
+// const ratioHeightResult = document.querySelector("#ratio_result-height");
+
+// let result;
+// switch (e.target) {
+//     case ratioWidthResult:
+//       result = calculateAspectRatio(ratio1, ratio2, e.target.value, "w");
+//       ratioHeightResult.value = result;
+//        break;
+//     case ratioHeightResult:
+//        result = calculateAspectRatio(ratio1, ratio2, e.target.value, "h");
+//        ratioWidthResult.value = result;
+//        break;
+//     default:
+//         ratioWidthResult.value = "";
+//         ratioHeightResult.value = "";
+
+//    }
+
+// });
