@@ -8,39 +8,31 @@ import { fixRoundingErrors, calculateAspectRatio } from "./aspect-ratio.js";
 const modulo1 = document.querySelector("#modulo_1");
 const modulo2 = document.querySelector("#modulo_2");
 const moduloResult = document.querySelector("#modulo_result");
+const moduloForm = document.querySelector("#modulo-form");
 
-modulo1.addEventListener("change", () => {
-    moduloResult.value = fixRoundingErrors(Helpers.modulo(modulo1.value, modulo2.value));
-});
-modulo2.addEventListener("change", () => {
-    moduloResult.value = fixRoundingErrors(Helpers.modulo(modulo1.value, modulo2.value));
-});
-
+moduloForm.addEventListener("change", () => {
+    moduloResult.value = Helpers.modulo(modulo1.value, modulo2.value);
+})
 
 // P E R C E N T A G E
 const percentage1 = document.querySelector("#percentage_1");
-const percentage2= document.querySelector("#percentage_2");
+const percentage2 = document.querySelector("#percentage_2");
 const percentageResult = document.querySelector("#percentage_result");
+const percetangeForm = document.querySelector("#percentage-form");
 
-percentage1.addEventListener("change", () => {
-    percentageResult.value = fixRoundingErrors(Helpers.percentage(percentage1.value, percentage2.value));
-});
-percentage2.addEventListener("change", () => {
-    percentageResult.value = fixRoundingErrors(Helpers.percentage(percentage1.value, percentage2.value));
-});
-
+percetangeForm.addEventListener("change", () => {
+    percentageResult.value = Helpers.percentage(percentage1.value, percentage2.value);
+})
 
 // P E R C E N T A G E --  O F
 const percentageOf1 = document.querySelector("#percentageOf_1");
 const percentageOf2= document.querySelector("#percentageOf_2");
 const percentageOfResult = document.querySelector("#percentageOf_result");
+const percetangeOfForm = document.querySelector("#percentageOf-form");
 
-percentageOf1.addEventListener("change", () => {
-    percentageOfResult.value = fixRoundingErrors(Helpers.percentageOf(percentageOf1.value, percentageOf2.value));
-});
-percentageOf2.addEventListener("change", () => {
-    percentageOfResult.value = fixRoundingErrors(Helpers.percentageOf(percentageOf1.value, percentageOf2.value));
-});
+percetangeOfForm.addEventListener("change", () => {
+    percentageOfResult.value = Helpers.percentageOf(percentageOf1.value, percentageOf2.value);
+})
 
 
 
@@ -48,13 +40,11 @@ percentageOf2.addEventListener("change", () => {
 const difference1 = document.querySelector("#difference_1");
 const difference2 = document.querySelector("#difference_2");
 const differenceResult = document.querySelector("#difference_result");
+const differenceForm = document.querySelector("#difference-form");
 
-difference1.addEventListener("change", () => {
-    differenceResult.value = fixRoundingErrors(Helpers.difference(difference1.value, difference2.value));
-});
-difference2.addEventListener("change", () => {
-    differenceResult.value = fixRoundingErrors(Helpers.difference(difference1.value, difference2.value));
-});
+differenceForm.addEventListener("change", () => {
+    differenceResult.value = Helpers.difference(difference1.value, difference2.value);
+})
 
 
 // A S P E C T -- R A T I O
@@ -99,3 +89,5 @@ ratioHeightResult.addEventListener("change", () => {
 //    }
 
 // });
+
+
